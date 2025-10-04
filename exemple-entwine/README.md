@@ -62,6 +62,8 @@ On passe cette fois-ci par une pipeline PDAL pour coloriser la dalle LIDAR HD
 ]
 ```
 
+On joue cette pipeline en sauvegardant ce contenu dans un fichier `pipeline.json` et en la lancant avec `pdal pipeline pipeline.json -v 8`
+
 ## Visualisation de la dalle colorisée dans QGIS
 
 On drag and drop le fichier `LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69-COLOR.copc.laz` dans QGIS.
@@ -92,3 +94,15 @@ http-server -p 8080 --cors
 ```
 
 On peut visualiser l'EPT via le viewer Potree à l'URL `https://potree.entwine.io/data/view.html?r="http://localhost:8080/EPT/"`
+
+
+## Utilisation de l'EPT comme source de données pour PDAL
+
+Exemple 
+
+```bash
+pdal translate ept://EPT menou.tif --writers.gdal.resolution=1.0
+gdaldem hillshade menou.tif hillshade.png
+```
+
+## Utilisation de l'EPT comme source de données pour PDAL
