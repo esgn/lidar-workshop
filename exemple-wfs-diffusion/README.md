@@ -59,10 +59,10 @@ Ce traitement prend **40 minutes** et aboutit à la création du fichier `extrac
 On va utiliser cette fois-ci `pdal_wrench` pour générer un VPC correspondant à notre zone d'intérêt à partir de la liste des urls des fichiers.  
 
 ```bash
-pdal_wrench build_vpc --output menou.vpc --input-file-list=dalles_urls.txt
+pdal_wrench build_vpc --output menou.vpc --input-file-list=dalles_urls.txt --stats --overview --threads $(nproc)
 ```
 
-On peut visualiser ce VPC dans QGIS via un simple drag and drop. A noter que les données ne deviennent visibles qu'à partir un certain niveau de zoom.
+On peut visualiser ce VPC dans QGIS via un simple drag and drop. A noter que les données ne deviennent visibles qu'à partir un certain niveau de zoom. On utilise avant ce niveau de zoom un overview permettant d'avoir une visibilité dès le début. 
 
 
 ## Extraction de la zone d'intérêt suivant son contour polygonal via le fichier VPC

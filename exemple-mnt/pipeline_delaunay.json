@@ -1,0 +1,15 @@
+[
+    "LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69.copc.laz",
+    {
+        "type": "filters.range",
+        "limits": "Classification[2:2],Classification[66:66]"
+    },
+    {
+        "type": "filters.delaunay"
+    },
+    {
+        "type": "writers.ply",
+        "filename": "output.ply",
+        "faces": true
+    }
+]

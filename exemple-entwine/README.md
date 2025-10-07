@@ -75,7 +75,7 @@ On créé le dossier de sortie et on lance la commande entwine qui va créer l'E
 
 ```bash
 mkdir EPT
-entwine build -i LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69-COLOR.copc.laz -o EPT/
+entwine build -i LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69-COLOR.copc.laz -t $(nproc) -o EPT/
 ```
 
 ## Visualisation de l'EPT dans QGIS
@@ -101,8 +101,6 @@ On peut visualiser l'EPT via le viewer Potree à l'URL `https://potree.entwine.i
 Exemple 
 
 ```bash
-pdal translate ept://EPT menou.tif --writers.gdal.resolution=1.0
+pdal translate ept://EPT menou.tif --writers.gdal.resolution=0.5 --writers.gdal.dimension=Z --writers.gdal.output_type=max
 gdaldem hillshade menou.tif hillshade.png
 ```
-
-## Utilisation de l'EPT comme source de données pour PDAL

@@ -39,9 +39,6 @@ def main():
 
     writer = {}
     writer["type"] = "writers.copc"
-    # writer["forward"] = "all"
-    # writer["extra_dims"] = "all"
-    # writer["a_srs"] = "EPSG:2154"
     writer["filename"] = args.output
     content.append(writer)
 

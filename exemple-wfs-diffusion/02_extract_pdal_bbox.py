@@ -11,7 +11,7 @@ def parse_args():
     # parser.add_argument("--xmax",help="xmax",default=723711,type=float)
     # parser.add_argument("--ymax",help="ymax",default=6699295,type=float)
 
-    # Bounding box d'une zone d'étude
+    # Bounding box d'une zone d'étude plus restreinte
     parser.add_argument("--xmin",help="xmin",default=720000,type=float)
     parser.add_argument("--ymin",help="ymin",default=6697000,type=float)   
     parser.add_argument("--xmax",help="xmax",default=720500,type=float)
