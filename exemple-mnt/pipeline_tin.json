@@ -13,8 +13,8 @@
     {
         "type": "filters.faceraster",
         "resolution": 0.5,
-        "width": 1000,
-        "height": 1000,
+        "width": 2000,
+        "height": 2000,
         "origin_x": 721000,
         "origin_y": 6696000 
     },
@@ -23,6 +23,9 @@
         "filename": "output_mnt_tin.tif",
         "gdaldriver": "GTiff",
         "nodata": -9999,
-        "resolution": 0.5
+        "resolution": 0.5,
+        "dimension": "Z",
+        "data_type": "float32",
+        "output_type": "idw"
     }
 ]

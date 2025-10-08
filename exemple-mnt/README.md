@@ -17,7 +17,7 @@ wget "https://storage.sbg.cloud.ovh.net/v1/AUTH_63234f509d6048bca3c9fd7928720ca1
 Lancer la pipeline suivante
 
 ```
-pdal pipeline pipeline_idw.json -v 8
+pdal pipeline pipeline_tin.json -v 8
 ```
 
 Ouvrir le résultat `output_mnt_tin.tif` dans QGIS et utiliser l'outil `Raster > Analyse > Remplir NoData` pour trianguler les trous du MNT
