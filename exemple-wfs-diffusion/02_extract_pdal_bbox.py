@@ -42,6 +42,11 @@ def main():
         content.append(tile)
 
     filter = {}
+    filter["type"] = "filters.range"
+    filter["limits"] = "Classification[2:2]"  # Garder uniquement les points classés en 2 (sol)
+    content.append(filter)
+    
+    filter = {}
     filter["type"] = "filters.merge"
     content.append(filter)
 
