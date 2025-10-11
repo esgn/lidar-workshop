@@ -20,7 +20,7 @@ Lancer la pipeline suivante
 pdal pipeline pipeline_tin.json -v 8
 ```
 
-Ouvrir le résultat `output_mnt_tin.tif` dans QGIS et utiliser l'outil `Raster > Analyse > Remplir NoData` pour trianguler les trous du MNT
+Ouvrir le résultat `output_mnt_tin.tif` dans QGIS et utiliser l'outil `Raster > Analyse > Remplir NoData` pour trianguler les trous du MNT s'il en reste (ne devrait pas arriver. bug pdal?)
 
 
 ## Avec PDAL wrench
