@@ -61,6 +61,8 @@ On supprime la classification avec la pipeline suivante. Créer le fichier `pipe
 
 Executer la pipeline avec `pdal pipeline pipeline.json -v 8`. Vérifier dans QGIS la bonne suppression de la classification.
 
+![No classification](images/no-classif.png)
+
 ## Colorisation avec ign-pdal-tools
 
 On installe la librairie ign-pdal-tools
@@ -78,7 +80,9 @@ On colorise ensuite la dalle précédente avec RVB + IRC.
 python3 color.py --input LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69-NO-CLASSIF.copc.laz --rvb --ir --output dalle.laz
 ```
 
-On vérifie dans QGIS que la dalle a bien été colorisée
+On vérifie dans QGIS que la dalle a bien été colorisée.
+
+![Colorized point cloud](images/colorized.png)
 
 ## Inférence Myria3D sur la dalle colorisée
 
@@ -126,6 +130,6 @@ predict.interpolator.predicted_classification_channel="Classification" \
 predict.interpolator.entropy_channel=null
 ```
 
-On visualise dans QGIS le résultat de cette inférence
+On visualise dans QGIS le résultat de cette inférence.
 
 ![Myria3D result](images/result.png)
