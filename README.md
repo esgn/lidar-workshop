@@ -4,7 +4,7 @@
 
 Voir le dossier [exemple-entwine](exemple-entwine)
 
-## Visualisation et extraction de la courverture LIDAR HD avec PDAL et PDAL wrench
+## Visualisation et extraction de la couverture LIDAR HD avec PDAL et PDAL wrench
 
 Voir le dossier [exemple-wfs-diffusion](exemple-wfs-diffusion)
 
