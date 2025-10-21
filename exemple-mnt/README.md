@@ -26,10 +26,14 @@ Ouvrir le résultat `output_mnt_tin.tif` dans QGIS et utiliser l'outil `Raster >
 ## Avec PDAL wrench
 
 ```bash
-pdal_wrench to_raster_tin --input=LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69.copc.laz --output=OUTPUT.tif --resolution=0.5 --tile-size=1000 "--filter=Classification == 2 || Classification == 66" "--bounds=([721000, 722000], [6696000, 6697000])" --threads=$(nproc)
+pdal_wrench to_raster_tin \
+--input=LHD_FXX_0721_6697_PTS_C_LAMB93_IGN69.copc.laz \
+--output=OUTPUT.tif \
+--resolution=0.5 \
+--tile-size=1000 \
+"--filter=Classification == 2 || Classification == 9 || Classification == 66" \
+"--bounds=([721000, 722000], [6696000, 6697000])" \
+--threads=$(nproc)
 ```
+
  Ouvrir le résultat dans QGIS pour visualiser le MNT produit
-
-
-
-
