@@ -5,7 +5,7 @@
     },
     {
         "type": "filters.range",
-        "limits": "Classification[2:2],Classification[66:66]"
+        "limits": "Classification[2:2],Classification[9:9],Classification[66:66]"
     },
     {
         "type": "filters.delaunay"
@@ -25,7 +25,6 @@
         "nodata": -9999,
         "resolution": 0.5,
         "dimension": "Z",
-        "data_type": "float32",
-        "output_type": "idw"
+        "data_type": "float32"
     }
 ]
